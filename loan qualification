@@ -1,0 +1,31 @@
+
+#include <stdio.h>
+int main(){
+    int cyr=2024;
+    int yob;
+    int age;
+    double Annual_salary;
+    
+    printf("current year=%d", cyr);
+    
+    
+    
+    printf("\nenter your year of birth:");
+    scanf("%d",&yob);
+    
+     printf("\nenter annual salary:");
+    scanf("%lf", &Annual_salary);
+    age=cyr-yob;
+    
+    printf("\ncustomer age:%d", age);
+    
+    printf("\nannual salary:%.2lfksh", Annual_salary);
+    if((age>=21) && (Annual_salary>=21000)){
+        printf("\ncongratulations,elligible for a loan");
+        
+    }
+    else{
+        printf("\nsorry, not elligible for a loan...");
+    }
+    return 0;
+}
